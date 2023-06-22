@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @font-face {
+        font-family: myFirstFont;
+        src: url(NeonRetroDemoVersionRegular-rgPdx.otf);
+      }
+      @font-face {
+        font-family: retrosecond;
+        src: url(70SdiscopersonaluseBold-w14z2.otf);
+      }
+    </style>
+    <title>Videoteka pauk</title>
+  </head>
+  <body
+    style="
+      background-image: url(background.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      margin: 0;
+    "
+  >
+    <header>
+      <table
+        style="
+          width: 100%;
+          padding: 0;
+          margin-top: 0;
+          background-color: #35bdd7;
+        "
+      >
+        <tr>
+          <td style="width: 10%; padding-left: 40px">
+            <img src="icons8-menu-rounded-80.png" height="35px" width="35px" />
+          </td>
+          <td
+            style="
+              color: #130b34;
+              font-family: Delicious Handrawn;
+              font-size: 20px;
+            "
+          >
+            <ul style="list-style-type: none; padding-left: 0">
+              <li>
+                <a
+                  href="vhs videoteka pocetna.html"
+                  style="color: #130b34; text-decoration: none"
+                  >Početna</a
+                >
+              </li>
+              <li>
+                <a
+                  href="vhs videoteka popis filmova.html"
+                  style="color: #130b34; text-decoration: none"
+                  >Popis filmova</a
+                >
+              </li>
+              <li>
+                <a href="#" style="color: #130b34; text-decoration: none"
+                  >Unajmi film</a
+                >
+              </li>
+            </ul>
+          </td>
+          <td style="width: 70%">
+            <svg width="400" height="180">
+              <rect
+                x="40"
+                y="20"
+                width="300"
+                height="150"
+                style="fill: black"
+              />
+              <line
+                x1="45"
+                y1="35"
+                x2="335"
+                y2="35"
+                style="stroke: lightgrey; stroke-width: 3"
+              />
+              <rect
+                x="65"
+                y="50"
+                rx="20"
+                ry="20"
+                width="250"
+                height="100"
+                style="fill: white"
+              />
+              <line
+                x1="90"
+                y1="50"
+                x2="108"
+                y2="107"
+                style="stroke: darkgrey; stroke-width: 5"
+              />
+              <line
+                x1="290"
+                y1="50"
+                x2="272"
+                y2="107"
+                style="stroke: darkgrey; stroke-width: 5"
+              />
+              <circle cx="140" cy="100" r="35" fill="grey" />
+              <circle
+                cx="143"
+                cy="100"
+                r="20"
+                stroke="lightgrey"
+                stroke-width="3"
+                fill="white"
+              />
+              <circle cx="240" cy="100" r="35" fill="grey" />
+              <circle
+                cx="238"
+                cy="100"
+                r="20"
+                stroke="lightgrey"
+                stroke-width="3"
+                fill="white"
+              />
+              <rect
+                x="140"
+                y="50"
+                width="100"
+                height="100"
+                style="fill: black"
+              />
+              <rect
+                x="148"
+                y="60"
+                rx="5"
+                ry="5"
+                width="85"
+                height="78"
+                style="fill: #ffe955"
+              />
+              <text
+                x="163"
+                y="15"
+                fill="black"
+                style="font-size: 30px"
+                transform="rotate(30 20,40)"
+              >
+                VHS
+              </text>
+            </svg>
+          </td>
+        </tr>
+        <tr>
+          <td
+            colspan="3"
+            style="
+              text-align: center;
+              font-size: 60px;
+              font-family: myFirstFont;
+              color: #e93d8f;
+            "
+          >
+            Videoteka "Vremenska kapsula"
+          </td>
+        </tr>
+      </table>
+    </header>
+    <div
+      style="
+        text-align: center;
+        width: 72%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #ffe955;
+        padding-bottom: 100%;
+      "
+    >
+      <section
+        style="
+          margin-top: 0%;
+          padding-top: 50px;
+          padding-left: 60px;
+          padding-right: 60px;
+          text-align: left;
+          font-family: Delicious Handrawn;
+          font-size: 25px;
+          line-height: 1;
+        "
+      >
+        <h1>Unajmi film po želji:</h1>
+
+        <form action="vhs videoteka zahvala.html">
+          <table style="width: 100%">
+            <tr>
+              <td>
+                <label for="fname">Ime:</label><br />
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  placeholder="Pero"
+                /><br />
+                <label for="lname">Prezime:</label><br />
+                <input
+                  type="text"
+                  id="lname"
+                  name="lname"
+                  placeholder="Perić"
+                />
+                <br />
+                <label for="ulica">Ulica:</label><br />
+                <input
+                  type="text"
+                  id="ulica"
+                  name="ulica"
+                  placeholder="Ivane Brlić Mažuranić 5"
+                />
+                <br />
+                <label for="grad">Grad:</label><br />
+                <input type="text" id="grad" name="grad" placeholder="Zagreb" />
+              </td>
+              <td>
+                <label for="filmovi">Odaberi film:</label>
+                <select id="filmovi" name="filmovi">
+                  <option value="thelionking">The Lion King</option>
+                  <option value="pulpfiction">Pulp Fiction</option>
+                  <option value="jurassicpark">Jurassic Park</option>
+                  <option value="thematrix">The Matrix</option>
+                  <option value="forrestgump">Forrest Gump</option>
+                  <option value="theshawshankredemption">
+                    The Shawshank Redemption
+                  </option>
+                  <option value="backtothefuture">Back to the Future</option>
+                  <option value="goodfellas">Goodfellas</option>
+                  <option value="titanic">Titanic</option>
+                  <option value="fightclub">Fight Club</option>
+                </select>
+                <input type="submit" value="Unajmi" />
+              </td>
+            </tr>
+          </table>
+        </form>
+      </section>
+
+      <footer style="text-align: center">
+        <p>Zapratite nas:</p>
+        <a href="https://www.facebook.com/" target="_blank" rel="Facebook"
+          ><img
+            src="icons8-facebook-80.png"
+            width="35px"
+            height="35px"
+            alt="Facebook"
+        /></a>
+        <a href="https://www.instagram.com" target="_blank" rel="Instagram"
+          ><img
+            src="icons8-instagram-old-80.png"
+            width="35px"
+            height="35px"
+            alt="Instagram"
+        /></a>
+        <a href="https://www.twitter.com" target="_blank" rel="Twitter"
+          ><img
+            src="icons8-twitter-80.png"
+            width="35px"
+            height="35px"
+            alt="Twitter"
+        /></a>
+        <hr />
+        <a href="#" style="color: #130b34; text-decoration: none"
+          >Povratak na vrh</a
+        >
+      </footer>
+    </div>
+  </body>
+</html>
