@@ -1,0 +1,12 @@
+h1 {
+  color: chocolate;
+  text-decoration: underline dashed;
+}
+
+p {
+  color: rgb(44, 202, 105);
+  font-size: 2em;
+  /* 1em = 16px; 2em = 32px 
+    rem skalabilna jedinica  
+  */
+}
