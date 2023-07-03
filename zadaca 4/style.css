@@ -1,0 +1,16 @@
+body {
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(NeonRetroDemoVersionRegular-rgPdx.otf);
+}
+@font-face {
+  font-family: retrosecond;
+  src: url(70SdiscopersonaluseBold-w14z2.otf);
+}
