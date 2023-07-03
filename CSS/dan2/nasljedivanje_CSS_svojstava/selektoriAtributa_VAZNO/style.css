@@ -1,0 +1,44 @@
+body {
+  color: #020;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+}
+
+/* Element koji u sebi ima 
+    atribut title dodaj mu oblikovanje */
+[title] {
+  color: aqua;
+}
+
+/* Atribut sa tocnom vrijednosti */
+[title="naslov stranice"] {
+  color: blue;
+}
+
+/* Atribut gdje se vrijednost nalazi bilo gdje */
+[title*="odlomak"] {
+  color: brown;
+}
+
+/* Atribut gdje se vrijednost
+ nalazi bilo gdje odvojen razmakom */
+[title~="odlomak"] {
+  text-transform: uppercase;
+}
+
+/* Atribut gdje se vrijednost nalazi na pocetku */
+[title^="odlomak"] {
+  font-style: italic;
+}
+
+/* Atribut gdje se vrijednost nalazi
+ na pocetku i odvojen je crticom */
+[title|="odlomak"] {
+  font-size: 12px;
+}
+
+/* Atribut gdje se vrijednost nalazi na kraju */
+[title$="odlomak"] {
+  color: darkorange;
+}

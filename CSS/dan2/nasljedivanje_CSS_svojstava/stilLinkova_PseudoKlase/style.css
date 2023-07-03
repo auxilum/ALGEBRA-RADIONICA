@@ -1,0 +1,27 @@
+body {
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+a {
+  color: darkgreen;
+  text-decoration: none;
+}
+
+a:visited {
+  color: aqua;
+}
+
+a:hover {
+  color: blueviolet;
+}
+
+a:focus {
+  color: chocolate;
+}
+
+a:active {
+  color: dodgerblue;
+}
+/*  Treba paziti na redosljed pseudoklasa!!!! */
