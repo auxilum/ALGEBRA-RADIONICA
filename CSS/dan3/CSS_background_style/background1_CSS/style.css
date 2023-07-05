@@ -1,0 +1,22 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #000;
+  background-color: #ddd;
+}
+
+header {
+  background-color: greenyellow;
+}
+
+nav {
+  background-color: #ffc;
+}
+
+main {
+  background-color: rgb(135, 135, 243);
+}
+
+footer {
+  background-color: crimson;
+}

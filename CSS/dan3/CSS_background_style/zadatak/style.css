@@ -1,0 +1,17 @@
+body {
+  background: url(images/fire.png) no-repeat fixed center 10vh/400px,
+    url(images/pattern.png) fixed,
+    url(images/blossom.jpg) no-repeat fixed center;
+}
+
+h1 {
+  background-color: rgb(71, 69, 69);
+  color: aliceblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+p {
+  color: aliceblue;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
