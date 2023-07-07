@@ -1,0 +1,17 @@
+/* background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; */
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  color: black;
+  background-color: #ddd;
+  /* Kad imamo dvije i vise slika, odvajamo ih ',' i kasnije isto tako
+  svojstva odvajamo ',' */
+  background-image: url(images/butterfly.png), url(images/coffee-cup.png);
+  background-repeat: no-repeat, repeat-x;
+  /* background-position: center center; */
+  /* background-position: position-x position-y; */
+  background-position: 100px 200px, right top;
+  background-attachment: scroll, fixed;
+  background-size: 25%, 15%;
+}
