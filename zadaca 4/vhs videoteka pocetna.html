@@ -4,166 +4,117 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap"
       rel="stylesheet"
     />
-    <style>
-      @font-face {
-        font-family: myFirstFont;
-        src: url(NeonRetroDemoVersionRegular-rgPdx.otf);
-      }
-      @font-face {
-        font-family: retrosecond;
-        src: url(70SdiscopersonaluseBold-w14z2.otf);
-      }
-    </style>
     <title>Videoteka "Vremenska kapsula"</title>
   </head>
   <body>
     <header>
-      <table
-        style="
-          width: 100%;
-          padding: 0;
-          margin-top: 0;
-          background-color: #35bdd7;
-        "
-      >
-        <tr>
-          <td style="width: 10%; padding-left: 40px">
-            <img src="icons8-menu-rounded-80.png" height="35px" width="35px" />
-          </td>
-          <td
-            style="
-              color: #130b34;
-              font-family: Delicious Handrawn;
-              font-size: 20px;
-            "
+      <div id="logo">
+        <svg width="400" height="180">
+          <rect x="40" y="20" width="300" height="150" style="fill: black" />
+          <line
+            x1="45"
+            y1="35"
+            x2="335"
+            y2="35"
+            style="stroke: lightgrey; stroke-width: 3"
+          />
+          <rect
+            x="65"
+            y="50"
+            rx="20"
+            ry="20"
+            width="250"
+            height="100"
+            style="fill: white"
+          />
+          <line
+            x1="90"
+            y1="50"
+            x2="108"
+            y2="107"
+            style="stroke: darkgrey; stroke-width: 5"
+          />
+          <line
+            x1="290"
+            y1="50"
+            x2="272"
+            y2="107"
+            style="stroke: darkgrey; stroke-width: 5"
+          />
+          <circle cx="140" cy="100" r="35" fill="grey" />
+          <circle
+            cx="143"
+            cy="100"
+            r="20"
+            stroke="lightgrey"
+            stroke-width="3"
+            fill="white"
+          />
+          <circle cx="240" cy="100" r="35" fill="grey" />
+          <circle
+            cx="238"
+            cy="100"
+            r="20"
+            stroke="lightgrey"
+            stroke-width="3"
+            fill="white"
+          />
+          <rect x="140" y="50" width="100" height="100" style="fill: black" />
+          <rect
+            x="148"
+            y="60"
+            rx="5"
+            ry="5"
+            width="85"
+            height="78"
+            style="fill: #ffe955"
+          />
+          <text
+            x="163"
+            y="15"
+            fill="black"
+            style="font-size: 30px"
+            transform="rotate(30 20,40)"
           >
-            <ul style="list-style-type: none; padding-left: 0">
-              <li>
-                <a href="#" style="color: #130b34; text-decoration: none"
-                  >Početna</a
-                >
-              </li>
-              <li>
-                <a
-                  href="vhs videoteka popis filmova.html"
-                  style="color: #130b34; text-decoration: none"
-                  >Popis filmova</a
-                >
-              </li>
-              <li>
-                <a
-                  href="vhs videoteka unajmi film.html"
-                  style="color: #130b34; text-decoration: none"
-                  >Unajmi film</a
-                >
-              </li>
-            </ul>
-          </td>
-          <td style="width: 70%">
-            <svg width="400" height="180">
-              <rect
-                x="40"
-                y="20"
-                width="300"
-                height="150"
-                style="fill: black"
-              />
-              <line
-                x1="45"
-                y1="35"
-                x2="335"
-                y2="35"
-                style="stroke: lightgrey; stroke-width: 3"
-              />
-              <rect
-                x="65"
-                y="50"
-                rx="20"
-                ry="20"
-                width="250"
-                height="100"
-                style="fill: white"
-              />
-              <line
-                x1="90"
-                y1="50"
-                x2="108"
-                y2="107"
-                style="stroke: darkgrey; stroke-width: 5"
-              />
-              <line
-                x1="290"
-                y1="50"
-                x2="272"
-                y2="107"
-                style="stroke: darkgrey; stroke-width: 5"
-              />
-              <circle cx="140" cy="100" r="35" fill="grey" />
-              <circle
-                cx="143"
-                cy="100"
-                r="20"
-                stroke="lightgrey"
-                stroke-width="3"
-                fill="white"
-              />
-              <circle cx="240" cy="100" r="35" fill="grey" />
-              <circle
-                cx="238"
-                cy="100"
-                r="20"
-                stroke="lightgrey"
-                stroke-width="3"
-                fill="white"
-              />
-              <rect
-                x="140"
-                y="50"
-                width="100"
-                height="100"
-                style="fill: black"
-              />
-              <rect
-                x="148"
-                y="60"
-                rx="5"
-                ry="5"
-                width="85"
-                height="78"
-                style="fill: #ffe955"
-              />
-              <text
-                x="163"
-                y="15"
-                fill="black"
-                style="font-size: 30px"
-                transform="rotate(30 20,40)"
-              >
-                VHS
-              </text>
-            </svg>
-          </td>
-        </tr>
-        <tr>
-          <td
-            colspan="3"
-            style="
-              text-align: center;
-              font-size: 60px;
-              font-family: myFirstFont;
-              color: #e93d8f;
-            "
-          >
-            Videoteka "Vremenska kapsula"
-          </td>
-        </tr>
-      </table>
+            VHS
+          </text>
+        </svg>
+      </div>
+
+      <div class="naslov">Videoteka "Vremenska kapsula"</div>
+
+      <nav>
+        <ul style="list-style-type: none; padding-left: 0">
+          <li>
+            <a
+              href="vhs videoteka pocetna.html"
+              style="color: #130b34; text-decoration: none"
+              >Početna</a
+            >
+          </li>
+          <li>
+            <a
+              href="vhs videoteka popis filmova.html"
+              style="color: #130b34; text-decoration: none"
+              >Popis filmova</a
+            >
+          </li>
+          <li>
+            <a
+              href="vhs videoteka unajmi film.html"
+              style="color: #130b34; text-decoration: none"
+              >Unajmi film</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
     <div
       style="

@@ -14,3 +14,40 @@ body {
   font-family: retrosecond;
   src: url(70SdiscopersonaluseBold-w14z2.otf);
 }
+
+header {
+  width: 100%;
+  padding: 0;
+  margin-top: 0;
+  background-color: #35bdd7;
+}
+
+#logo {
+  text-align: center;
+}
+
+.naslov {
+  text-align: center;
+  font-size: 60px;
+  font-family: myFirstFont;
+  color: #e93d8f;
+}
+
+nav {
+  padding-bottom: 20px;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding-left: 0;
+  color: #130b34;
+  font-family: Delicious Handrawn;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+a:hover {
+  color: #ffe955 !important;
+  font-size: 50px;
+}
