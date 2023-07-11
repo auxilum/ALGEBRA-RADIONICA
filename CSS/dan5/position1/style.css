@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+}
+
+.box1 {
+  background-color: aqua;
+}
+
+.box2 {
+  background-color: brown;
+  /*  position: static; --- default vrijednost ---  */
+  /* position: relative;  */
+  position: fixed;
+  left: 50px;
+  top: 50px;
+}

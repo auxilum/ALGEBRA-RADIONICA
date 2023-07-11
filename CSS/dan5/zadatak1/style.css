@@ -1,0 +1,15 @@
+body {
+  margin: 15px;
+  padding: 0;
+}
+
+p {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-left: -4px;
+  width: 33.3%;
+  padding: 20px;
+  background-color: lightgrey;
+}

@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+  /* box-sizing: content-box; */
+}
+
+img {
+  display: block;
+  margin: 30px auto;
+  width: 40%;
+  border: 5px solid darkgray;
+  padding: 30px;
+}
