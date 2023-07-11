@@ -1,18 +1,17 @@
-.okvir {
+body > div {
   height: 500px;
   width: 500px;
-  color: lightgray;
   border: 10px solid rgb(114, 113, 113);
   margin: 20px auto;
 }
 
-.crveni {
+div :nth-child(1) {
   height: 50%;
   width: 50%;
   background-color: rgba(218, 113, 113, 0.973);
 }
 
-.plavi {
+div :nth-child(2) {
   height: 50%;
   width: 50%;
   background-color: rgb(112, 112, 223);
