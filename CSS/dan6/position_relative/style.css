@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+}
+
+.box1 {
+  background-color: aqua;
+}
+
+.box2 {
+  background-color: brown;
+  /*  position: static; --- default vrijednost --- 
+  tada height width ne utjecu na poziciju elementa */
+  /* position: relative; --- mozemo pomicati po zeljenim 
+  kordinatama */
+  position: relative;
+  left: 200px;
+  top: -200px;
+}

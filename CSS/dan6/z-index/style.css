@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+}
+
+.box1 {
+  background-color: aqua;
+  z-index: 4;
+}
+
+.box2 {
+  background-color: blue;
+  left: 50px;
+  top: 50px;
+  z-index: 3;
+}
+
+.box3 {
+  background-color: brown;
+  left: 100px;
+  top: 100px;
+  z-index: 2;
+}
+
+.box4 {
+  background-color: chartreuse;
+  left: 150px;
+  top: 150px;
+  /* z-index --- razina vidljivosti, 
+  jedan korak ispred ostalih */
+  z-index: 1;
+}
+
+.box5 {
+  background-color: hotpink;
+  width: 400px;
+  height: 400px;
+  z-index: 5;
+  /* kad ima poziciju static onda z-index ne vrijedi */
+  /* na sve position na kojem mozemo mijenjati pozicije 
+  --top, bottom,...-- tada mozemo korisiti z-index */
+  position: static;
+}

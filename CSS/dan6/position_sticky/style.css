@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+}
+
+.box1 {
+  background-color: aqua;
+}
+
+.box2 {
+  background-color: brown;
+  position: sticky;
+  left: 20px;
+  top: 20px;
+}
