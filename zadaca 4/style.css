@@ -17,13 +17,19 @@ body {
 
 header {
   width: 100%;
-  padding: 0;
+  padding-bottom: 40px;
   margin-top: 0;
   background-color: #35bdd7;
 }
 
 #logo {
   text-align: center;
+}
+
+object {
+  margin: auto auto;
+  height: 50%;
+  width: 50%;
 }
 
 .naslov {
@@ -33,13 +39,8 @@ header {
   color: #e93d8f;
 }
 
-nav {
-  padding-bottom: 20px;
-}
-
 nav > ul {
   list-style-type: none;
-  padding-left: 0;
   color: #130b34;
   font-family: Delicious Handrawn;
   font-size: 20px;
@@ -47,7 +48,97 @@ nav > ul {
   justify-content: space-around;
 }
 
-a:hover {
+/* nav {
+  position: relative;
+}
+
+.linkEdit {
+  position: absolute;
+} */
+
+.linkEdit:hover {
   color: #ffe955 !important;
-  font-size: 50px;
+  font-size: 30px;
+}
+
+.backgroundMain {
+  text-align: center;
+  width: 72%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  padding-top: 40px;
+  background-color: #ffe955;
+}
+
+#prviParagraf {
+  background-color: #e93d8f;
+  border-radius: 25% 5%;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  text-align: left;
+  font-family: Delicious Handrawn;
+  font-size: 25px;
+  line-height: 1.5;
+  width: 50%;
+  margin: auto;
+}
+
+.gridLayout {
+  max-width: 1900px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-evenly;
+  gap: 25px;
+  place-items: center;
+}
+
+.movieContainer {
+  height: 250px;
+  width: 200px;
+  background-color: #e93d8f;
+  border-radius: 10% 20%;
+  padding: 10px;
+  box-shadow: -4px 4px 5px #333;
+}
+
+.moviePicture {
+  height: 150px;
+  width: 140px;
+  border-radius: 10% 20%;
+  background-color: aquamarine;
+  margin: auto;
+  overflow: hidden;
+}
+
+.moviePicture img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+figcaption {
+  margin-top: 25px;
+  margin-left: 35px;
+  text-align: left;
+}
+
+@media (min-width: 400px) {
+  .gridLayout {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 700px) {
+  .gridLayout {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .gridLayout {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

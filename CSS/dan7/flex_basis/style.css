@@ -11,7 +11,7 @@ body {
 .wrapper {
   border: 1px dashed #666;
   padding: 1em;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .wrapper div {
@@ -20,31 +20,18 @@ body {
   text-align: center;
   padding: 1em;
   margin: 1em;
-  width: 15vw;
+  width: 150px;
 }
 
 .flex-container {
   display: flex;
 }
 
-/* ako zelim pomaknuti 1 element ispred ostalih
-koristimo -1 */
+.flex-item {
+  flex-grow: 1;
+}
+
 .flex-item:nth-child(3) {
-  order: -1;
-}
-
-.flex-item:nth-child(1) {
-  order: 4;
-}
-
-.flex-item:nth-child(2) {
-  order: 3;
-}
-
-.flex-item:nth-child(4) {
-  order: 5;
-}
-
-.flex-item:nth-child(5) {
-  order: 2;
+  /* zeljena sirina nekom elementu */
+  flex-basis: 500px;
 }

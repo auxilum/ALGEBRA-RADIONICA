@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #333;
+}
+
+.wrapper {
+  border: 1px dashed #666;
+  padding: 5em;
+  height: 100vh;
+  width: 100vw;
+}
+
+.wrapper div {
+  background: #eee;
+  border: 3px solid #666;
+  text-align: center;
+  padding: 1em;
+  /* margin-top: 3px; */
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-content: center;
+  justify-content: space-between;
+  gap: 2%;
+}
+
+.flex-item {
+  /* sirina flex elementa ukoliko ih slazemo po retku (row)
+        odnosno visina ukoliko ih slazemo po stupcu (column) */
+  flex-basis: 25%;
+  /* height: 100%; */
+  width: 100%;
+  font-size: 2em;
+}
