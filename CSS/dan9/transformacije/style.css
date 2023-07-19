@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+div {
+  border: 1px solid #333;
+  width: 300px;
+  height: 150px;
+  background-color: #f93;
+  margin: 2em auto;
+}
+
+.translate {
+  /* poslije naredbe odmah ide zagrada */
+  transform: translate(150px, -20px);
+  /* transform: translateY(200px); */
+}
+
+.rotate {
+  transform: rotate(30deg);
+}
+
+.skew {
+  transform: skew(20deg, 15deg);
+}
+
+.scale {
+  /* koliko zelimo povecati ili smanjiti element
+    1 je defaultna vrijednost */
+  transform: scale(0.5, 0.3);
+}
+
+.multiple {
+  /* za visestruke transformacije */
+  transform: rotate(30deg) skew(20deg, 15deg) scale(0.4, 0.8);
+}
+
+.matrix {
+  /*  matrix(scaleX(), skewY(), skewX(), 
+    scaleY(), translateX(), translateY()) */
+
+  transform: matrix(1, -0.3, 0, 1, 0, 0);
+}

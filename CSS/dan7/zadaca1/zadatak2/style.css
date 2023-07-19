@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #333;
+}
+
+.wrapper {
+  border: 1px dashed #7a3030;
+  padding: 1em;
+  /* min-width: 100vw;
+  height: 50vh; */
+}
+
+.wrapper div {
+  background-color: #f1f1f1;
+  flex-basis: 350px;
+  margin: 20px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  min-width: 800px;
+  background-color: DodgerBlue;
+}

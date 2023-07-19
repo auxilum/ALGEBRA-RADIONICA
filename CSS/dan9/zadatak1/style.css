@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+section {
+  margin: auto;
+  display: flex;
+  width: 100vw;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div {
+  border: 1px solid #333;
+  text-align: center;
+  /* za centriranje teksta po y-osi */
+  vertical-align: middle;
+  padding-top: 70px;
+  height: 150px;
+  background-color: #f93;
+  margin: 2em;
+  flex-basis: 26%;
+}
+
+/* .rotate */
+div:nth-child(4) {
+  transform: rotate(180deg);
+}
+
+/* .skew */
+div:nth-child(5) {
+  transform: skew(15deg, 10deg);
+}
+
+/* .lastdiv */
+div:nth-child(6) {
+  transform: skew(10deg, 30deg) rotate(10deg) scale(0.7, 1.3);
+}

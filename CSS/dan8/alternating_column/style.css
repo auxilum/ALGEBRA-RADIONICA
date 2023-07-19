@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  /* padding: 1em; */
+  height: 600px;
+  border: 1px dashed #666;
+}
+
+.wrapper div {
+  background-color: #eee;
+  border: 1px solid #666;
+  text-align: center;
+  padding: 1em;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.flex-item {
+  flex-basis: 32%;
+  width: 16%;
+  flex-grow: 0;
+}
+
+.flex-item:nth-child(4n + 1) {
+  flex-basis: 100%;
+}
