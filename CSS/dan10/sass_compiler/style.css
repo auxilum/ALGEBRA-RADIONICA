@@ -1,0 +1,54 @@
+body {
+  color: #834;
+}
+
+header {
+  text-align: center;
+}
+header p {
+  font-size: 18px;
+}
+header h1 {
+  color: aqua;
+}
+header a {
+  color: chocolate;
+}
+
+section h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+section p {
+  text-align: justify;
+}
+section a {
+  color: #834;
+}
+section article {
+  background-color: #834;
+}
+section article p {
+  color: #eee;
+}
+section article a {
+  color: #eee;
+}
+
+footer {
+  text-align: center;
+}
+footer h1 {
+  text-align: end;
+}
+footer p {
+  text-align: start;
+  color: #eee;
+  background-color: #834;
+}
+footer a {
+  text-decoration: none;
+  color: #834;
+}
+footer a:hover {
+  color: blue;
+}/*# sourceMappingURL=style.css.map */

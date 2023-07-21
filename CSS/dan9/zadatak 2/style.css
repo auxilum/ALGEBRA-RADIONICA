@@ -50,11 +50,11 @@ div:nth-of-type(3):hover {
 }
 
 div:nth-of-type(4) {
-  transition: background 3s ease 4s, height 2s transform 4s ease 3s;
+  transition: 3s transform 1s ease, background-color 1s 2s;
 }
 
 div:nth-of-type(4):hover {
-  background: yellow;
-  height: 200px;
-  transform: height(200px) translateY(50px);
+  /* height: 200px; */
+  transform: scale(1, 1.9) translate(0, 160px);
+  background-color: yellow;
 }

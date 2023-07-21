@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Tahoma, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+h1 {
+  text-align: center;
+}
+
+/* box */
+
+div {
+  background-color: #f93;
+  border: 1px solid #333;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 2em 0;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 150px;
+  position: relative;
+}
+
+@keyframes animacija1 {
+  0% {
+    left: 0px;
+    background: red;
+  }
+  100% {
+    left: 500px;
+    background: yellow;
+  }
+}
+
+/* animation : name duration timing-function delay
+iteration-count fill-mode play-state */
+
+div:first-of-type {
+  animation: animacija1 2s linear;
+}
+
+@keyframes animacija2 {
+  0% {
+    left: 0px;
+    transform: rotate(0deg);
+  }
+  50% {
+    left: 250px;
+    transform: rotate(180deg);
+  }
+  100% {
+    left: 500px;
+    transform: rotate(0deg);
+  }
+}
+
+div:nth-of-type(2) {
+  animation: animacija2 3s ease-in-out 2s;
+}
+
+div:nth-of-type(2):hover {
+  animation-play-state: paused;
+}
+
+@keyframes animacija3 {
+  0% {
+    left: 0px;
+    background: yellow;
+  }
+  100% {
+    left: 80%;
+    background: yellow;
+  }
+}
+
+div:nth-of-type(3) {
+  animation: animacija3 4s ease-in-out 1s backwards 2;
+}
+
+@keyframes animacija4 {
+  0% {
+    transform: rotateX(0);
+  }
+  100% {
+    transform: rotateX(-180deg);
+  }
+}
+
+div:nth-of-type(4) {
+  animation: animacija4 1.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) both
+    infinite;
+}
+
+@keyframes animacija5 {
+  0% {
+    box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e,
+      0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    box-shadow: -1px 1px #3e3e3e, -2px 2px #3e3e3e, -3px 3px #3e3e3e,
+      -4px 4px #3e3e3e, -5px 5px #3e3e3e, -6px 6px #3e3e3e, -7px 7px #3e3e3e,
+      -8px 8px #3e3e3e;
+    transform: translateX(8px) translateY(-8px);
+  }
+}
+
+div:nth-of-type(5) {
+  animation: animacija5 1.6s cubic-bezier(0.47, 0, 0.745, 0.715) both infinite;
+}
