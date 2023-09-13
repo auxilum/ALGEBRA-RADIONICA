@@ -6,7 +6,6 @@ let randomArr = [
   "over",
   "the",
   "lazy",
-  "asddddddasdsadsad",
   "dog",
 ];
 
@@ -42,3 +41,26 @@ let longestWord = filterFunc1(randomArr, function (max, el) {
   }
 });
 console.log(longestWord);
+
+//2D arrays
+matrix = [
+  [11, 2, -99],
+  [20, 19, 10],
+  [47, 72, 56],
+];
+
+function maxInMatrix(matrix) {
+  // your code here...
+  let largest = matrix[0][0];
+  for (let i = 0; i < matrix.length; i++) {
+    let subMatrix = matrix[i];
+    for (let j = 0; j < subMatrix.length; j++) {
+      if (subMatrix[j] > largest) {
+        largest = subMatrix[j];
+      }
+    }
+  }
+  return largest;
+}
+
+console.log(maxInMatrix(matrix));
