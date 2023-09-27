@@ -1,0 +1,29 @@
+@mixin flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@mixin a-button {
+    a {
+        background-color: $boja2;
+        color: $boja1;
+        padding: 10px;
+        margin: 1em;
+        &:visited {
+            background-color: aqua;
+        }
+        &:hover {
+            background-color: $boja3;
+        }
+    }
+    p {
+        background-color: $boja3
+    }
+}
+
+@mixin align-element($display, $txt, $space) {
+    display: $display;
+    margin: $space;
+    text-align: $txt;
+}

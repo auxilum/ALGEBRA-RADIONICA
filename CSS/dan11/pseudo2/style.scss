@@ -1,0 +1,56 @@
+/* varijable */
+$boja1: #eee;
+$boja2: #333;
+$boja3: #800;
+$font1: Tahoma, sans-serif;
+$font2: Courier, monospace;
+
+@mixin flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* mixin - argunent s vise vrijednosti */
+@mixin margin-mix($margin...) {
+    margin: $margin;
+}
+
+/* mixin - argunent sa zadanom vrijednosti 
+ako upisemo vrijednost ulazi u $r, ako ne onda se prosljeduje 20px*/
+@mixin border-radius($r: 20px) {
+    border-radius: $r;
+}
+
+@mixin has-content {
+    section {
+        /* primjeni oblikovanje samo unutar section selektora */
+        @content;
+    }
+}
+
+@include has-content() {
+    .odlomak {
+        border: 8px dotted $boja3;
+        
+    }
+}
+
+header, footer, section, article {
+    border: 2px solid $boja2;
+    padding: 1em;
+}
+
+section {
+    article {
+        @include border-radius();
+        @include margin-mix(1em);
+        &:last-child {
+            @include border-radius(0 30px);
+        }
+    }
+}
+
+footer {
+    @include margin-mix(1em 0 2em 5em);
+}

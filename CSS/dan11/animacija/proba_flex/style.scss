@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+ul {
+    width: 100vw;
+    border: 4px solid #333;
+    padding: 1em;
+    list-style: none;
+    @include flex-box();
+    li {
+        background-color: aquamarine;
+        border: 1px solid #333;
+        flex: 0 450px;
+        height: 20vh;
+    }
+}
+
+
+
+.item-container {
+    @include flex-box();
+    .item {
+        background-color: blueviolet;
+        border: 2px dashed yellow;
+        width: 300px;
+    }
+    
+}
+
+
+@keyframes

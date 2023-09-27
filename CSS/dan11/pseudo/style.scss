@@ -1,0 +1,66 @@
+/* varijable */
+$boja1: #eee;
+$boja2: #333;
+$boja3: #800;
+$font1: Tahoma, sans-serif;
+$font2: Courier, monospace;
+
+@mixin flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@mixin a-button {
+    a {
+        background-color: $boja2;
+        color: $boja1;
+        padding: 10px;
+        margin: 1em;
+        &:visited {
+            background-color: aqua;
+        }
+        &:hover {
+            background-color: $boja3;
+        }
+    }
+    p {
+        background-color: $boja3
+    }
+}
+
+/* mixin s argumentima */
+@mixin align-element($display, $txt, $space) {
+    display: $display;
+    margin: $space;
+    text-align: $txt;
+}
+
+header {
+    a {
+        @include align-element(block, center, 1em auto);
+        background-color: $boja3;
+        color: $boja1;
+        padding: 10px;
+        width: 300px;
+    }
+}
+
+section {
+    @include flex-container();
+    background-color: $boja3;
+    padding: 1em;
+    article {
+        background-color: $boja1;
+        flex-basis: 48%;
+        a {
+            @include align-element(inline-block, right, 1em 50px);
+            background-color: $boja3;
+        }
+    }
+}
+
+
+footer {
+    @include a-button();
+}

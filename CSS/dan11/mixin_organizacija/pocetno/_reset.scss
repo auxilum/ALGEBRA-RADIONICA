@@ -1,0 +1,23 @@
+// varijable
+$boja1: #eee;
+$boja2: #333;
+$boja3: #800;
+$font1: Tahoma, sans-serif;
+$font2: Courier, monospace;
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,44 @@
+/* mixin - animacija */
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+div {
+  background-color: rgb(0, 150, 80);
+  margin: 1em auto;
+  padding: 1em;
+  width: 25%;
+  /* animacija */
+  /* tranzicija */
+}
+div:first-child {
+  animation: fade 2s ease-in-out infinite;
+}
+div:nth-child(2) {
+  animation: fade 4s linear infinite;
+}
+div:nth-child(3) {
+  transition: background-color 0.5s ease;
+}
+div:nth-child(3):hover {
+  background-color: rgb(150, 0, 0);
+}
+div:nth-child(4) {
+  transition: width 1s ease;
+}
+div:nth-child(4):hover {
+  width: 80%;
+}
+div:nth-child(5) {
+  transition: transform 1s ease;
+}
+div:nth-child(5):hover {
+  transform: translate(100px, 0);
+}/*# sourceMappingURL=style.css.map */

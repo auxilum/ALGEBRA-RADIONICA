@@ -1,0 +1,19 @@
+.borders {
+    border: 2px solid #800;
+}
+
+%spaces {
+    padding: 1em;
+    margin: 1em;
+}
+
+header, 
+footer, 
+article {
+    @extend .borders;
+    @extend %spaces;
+}
+
+p {
+    @extend %spaces;
+}

@@ -54,9 +54,10 @@ footer {
         
         text-decoration: none;
         color: #834;
+        &:hover {
+            color: rgb(51, 223, 88);
+        }
     }
-    a:hover {
-        color: blue;
-    }
+    
     
 }

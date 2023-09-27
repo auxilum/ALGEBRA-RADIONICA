@@ -1,0 +1,16 @@
+@import "klase/mixins";
+@import "pocetno/reset";
+
+body {
+    background-color: $boja3;
+    color: $boja2;
+    font-family: $font1;
+}
+
+nav {
+    ul {
+        li {
+            @include a-button;
+        }
+    }
+}

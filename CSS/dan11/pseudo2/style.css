@@ -1,0 +1,27 @@
+/* varijable */
+/* mixin - argunent s vise vrijednosti */
+/* mixin - argunent sa zadanom vrijednosti 
+ako upisemo vrijednost ulazi u $r, ako ne onda se prosljeduje 20px*/
+section {
+  /* primjeni oblikovanje samo unutar section selektora */
+}
+section .odlomak {
+  border: 8px dotted #800;
+}
+
+header, footer, section, article {
+  border: 2px solid #333;
+  padding: 1em;
+}
+
+section article {
+  border-radius: 20px;
+  margin: 1em;
+}
+section article:last-child {
+  border-radius: 0 30px;
+}
+
+footer {
+  margin: 1em 0 2em 5em;
+}/*# sourceMappingURL=style.css.map */

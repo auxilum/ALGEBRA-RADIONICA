@@ -1,0 +1,12 @@
+.borders, header,
+footer,
+article {
+  border: 2px solid #800;
+}
+
+p, header,
+footer,
+article {
+  padding: 1em;
+  margin: 1em;
+}/*# sourceMappingURL=style.css.map */
