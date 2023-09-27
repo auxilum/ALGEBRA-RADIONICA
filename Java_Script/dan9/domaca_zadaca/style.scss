@@ -1,0 +1,114 @@
+.ledSize {
+  margin: 0 auto;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  top: 586px;
+}
+
+.ledON {
+  z-index: 1000;
+  background-color: #24e0ff;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #006 0 -1px 9px,
+    #3f8cff 0 2px 14px;
+}
+
+.ledOFF {
+  background-color: rgb(0, 116, 170);
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #006 0 -1px 9px,
+    #3f8cff00 0 2px 14px;
+}
+
+#naslov {
+  font-family: "Electrolize", sans-serif;
+  // font-size: 70px;
+}
+
+#container {
+  height: 800px;
+  width: 1200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(assets/korg-volca-sample2.jpg);
+}
+
+#audio1 {
+  @extend .ledSize;
+  left: 105px;
+}
+
+#audio2 {
+  @extend .ledSize;
+  left: 172px;
+}
+
+#audio3 {
+  @extend .ledSize;
+  left: 237px;
+}
+
+#audio4 {
+  @extend .ledSize;
+  left: 304px;
+}
+
+#audio5 {
+  @extend .ledSize;
+  left: 370px;
+}
+
+#audio6 {
+  @extend .ledSize;
+  left: 435px;
+}
+
+#audio7 {
+  @extend .ledSize;
+  left: 502px;
+}
+
+#audio8 {
+  @extend .ledSize;
+  left: 569px;
+}
+
+#audio9 {
+  @extend .ledSize;
+  left: 635px;
+}
+
+#audio10 {
+  @extend .ledSize;
+  left: 702px;
+}
+
+#audio11 {
+  @extend .ledSize;
+  left: 768px;
+}
+
+#audio12 {
+  @extend .ledSize;
+  left: 834px;
+}
+
+#audio13 {
+  @extend .ledSize;
+  left: 900px;
+}
+
+#audio14 {
+  @extend .ledSize;
+  left: 967px;
+}
+
+#audio15 {
+  @extend .ledSize;
+  left: 1033px;
+}
+
+#audio16 {
+  @extend .ledSize;
+  left: 1099px;
+}

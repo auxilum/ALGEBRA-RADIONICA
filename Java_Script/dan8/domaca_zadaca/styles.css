@@ -1,0 +1,9 @@
+.info {
+  padding-bottom: 30px;
+  background-color: lightblue;
+}
+
+.hidden {
+  /* display: none; */
+  visibility: hidden;
+}

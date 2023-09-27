@@ -15,7 +15,6 @@ const _ = require("lodash");
 
 let dobro = "12345678901231232";
 let lose = "11234";
-let test = "sadasdasdasd";
 
 let jedinstveniZnakovi = function (password) {
   let newArr = _.split(password, "", 10);
