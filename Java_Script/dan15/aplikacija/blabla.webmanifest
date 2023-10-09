@@ -1,0 +1,31 @@
+{
+  "name": "blabla Progressive Web App",
+  "short_name": "blabla",
+  "description": "Progressive Web App that lists games submitted to the A-Frame category in the js13kGames 2017 competition.",
+  "icons": [
+    {
+      "src": "icons/background.png",
+      "sizes": "72x72 96x96 128x128 256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/header.png",
+      "sizes": "72x72 96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/bar.png",
+      "sizes": "72x72 96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/screenshot.jpg",
+      "sizes": "72x72",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/home/bruno/Programiranje/ALGEBRA RADIONICA/Java_Script/dan15/aplikacija/index.html",
+  "display": "fullscreen",
+  "theme_color": "#B12A34",
+  "background_color": "#B12A34"
+}

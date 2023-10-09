@@ -1,0 +1,16 @@
+{
+  "name": "npm_primjer",
+  "version": "1.0.0",
+  "description": "test example of package publish",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "js",
+    "example",
+    "module"
+  ],
+  "author": "BrunoBabojelic",
+  "license": "ISC"
+}
