@@ -1,0 +1,13 @@
+.striped {
+  background-color: lightGray;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.blabla {
+  width: 500px;
+  height: 500px;
+  border: 3px black solid;
+}
