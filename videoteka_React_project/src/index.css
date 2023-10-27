@@ -1,0 +1,16 @@
+:root {
+  background-image: url(./assets/film_strip_proba.png);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(./assets/NeonRetroDemoVersionRegular-rgPdx.otf);
+}
+@font-face {
+  font-family: retrosecond;
+  src: url(./assets/70SdiscopersonaluseBold-w14z2.otf);
+}
