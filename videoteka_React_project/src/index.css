@@ -1,9 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
 :root {
   background-image: url(./assets/film_strip_proba.png);
   background-repeat: repeat;
   background-attachment: fixed;
   background-size: cover;
-  margin: 0;
+  margin: 0 auto;
+  /* max-width: 1280px; */
+  /* padding: 2rem; */
+  text-align: center;
 }
 
 @font-face {
@@ -13,4 +22,224 @@
 @font-face {
   font-family: retrosecond;
   src: url(./assets/70SdiscopersonaluseBold-w14z2.otf);
+}
+
+#title {
+  text-align: center;
+  font-size: 60px;
+  font-family: myFirstFont;
+  color: #6b0336;
+  padding-top: 20px;
+}
+
+.header {
+  width: 71%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 40px;
+  margin-top: 0;
+  background-color: #9bc5ad;
+}
+
+nav {
+  list-style-type: none;
+}
+
+.navContainer {
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  justify-content: space-evenly;
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+  font-family: retrosecond;
+  font-size: 35px;
+}
+
+.backgroundMain {
+  text-align: center;
+  width: 71%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #ff7900;
+}
+
+#firstParagraph {
+  background-color: #f1e6c5;
+  border-radius: 25% 5%;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  text-align: left;
+  font-family: Delicious Handrawn;
+  font-size: 25px;
+  line-height: 1.5;
+  width: 50%;
+  margin: auto;
+}
+
+.gridLayout {
+  max-width: 1900px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-evenly;
+  gap: 25px;
+  place-items: center;
+}
+
+.movieContainer {
+  height: 250px;
+  width: 200px;
+  background-color: #f1e6c5;
+  border-radius: 10% 20%;
+  padding: 10px;
+}
+
+.movieContainer:hover {
+  box-shadow: -4px 4px 5px #333, -8px 6px 5px #f0e7e7;
+}
+
+.moviePicture {
+  height: 150px;
+  width: 140px;
+  border-radius: 10% 20%;
+  background-color: aquamarine;
+  margin: auto;
+  overflow: hidden;
+}
+
+.moviePicture img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: fill;
+  object-fit: fill;
+}
+
+figcaption {
+  margin-top: 25px;
+  margin-left: 35px;
+  text-align: left;
+  line-height: 1.1;
+}
+
+@media (min-width: 400px) {
+  .gridLayout {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 700px) {
+  .gridLayout {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1000px) {
+  .gridLayout {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.button {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.Footer {
+  width: 71%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  margin-top: 0;
+  background-color: #9bc5ad;
+}
+
+.footerContainer {
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  justify-content: space-evenly;
+}
+
+#divContainer {
+  height: 560px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.background {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 560px;
+  /* border: solid 2px black; */
+  background-color: #ff77006c;
+}
+
+.poster {
+  height: 85%;
+  width: 25%;
+  /* border: 5px solid rgb(189, 6, 6); */
+}
+
+.poster > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px 8px;
+  object-fit: cover;
+}
+
+.movieInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 85%;
+  width: 40%;
+  border-radius: 8px 8px;
+  /* border: 5px solid rgb(189, 6, 6); */
+  background-color: #9bc5add1;
+}
+
+.movieInfo > p {
+  background-color: #f1e6c58c;
+  border-radius: 20px 20px;
+  bottom: 780px;
+  left: 470px;
+  text-align: start;
+  width: 400px;
+  padding: 10px;
+}
+
+.youtubeVid {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0px;
+  left: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-color: #1f1c1cbe;
+  /* border: 4px solid yellow; */
+}
+
+.youtubeVid > object {
+  height: 70%;
+  width: 80%;
+  padding-top: 150px;
 }
